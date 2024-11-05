@@ -20,18 +20,30 @@
 		* {
 			margin: 0;
 		}
+    @media (max-width: 768px) {
+      body {
+        padding: 0px 16px !important;
+      }
+      h2 {
+        font-size: 24px !important;
+      }
+      p {
+        font-size: 14px !important;
+        line-height: 140% !important;
+      }
+    }
 	</style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f0f0f0; display: flex; gap: 40px; flex-direction: column;">
 
   <!-- Header -->
   <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="max-width: 880px; margin: 0 auto; padding: 54px 50px;">
-    <tr style="display: flex; justify-content: space-between; align-items: center;;">
+    <tr style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
       <td style="text-align: center; ">
-        <img src="assets/img/logo-2.png" alt="Подписолон" width="331" height="39" style="display: block;">
+        <img src="assets/img/logo-2.png" alt="Подписолон" style="display: block; width: 100%; max-width: 331px; height: auto;">
       </td>
       <td style="text-align: center; ">
-        <img src="assets/img/logo-3.png" alt="Подписолон" width="203" height="50" style="display: block;">
+        <img src="assets/img/logo-3.png" alt="Подписолон" style="display: block; width: 100%; max-width: 203px; height: auto;">
       </td>
     </tr>
   </table>
@@ -40,12 +52,12 @@
   <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="max-width: 880px; margin: 125px auto 0; padding: 0px 20px 80px;">
     <tr>
       <td style="text-align: center;">
-        <img src="assets/img/image-06.png" alt="Новое сообщение" width="373" height="211" style="display: block; margin: -125px auto 0;">
+        <img src="assets/img/image-06.png" alt="Новое сообщение" style="display: block; margin: -125px auto 0; max-width: 370px; height: auto; width: 100%;">
         <h2 style="color: #333; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal; margin-top: 30px;">В вашем ящике новое сообщение!</h2>
         <p style="color: #333;text-align: center;font-size: 16px;font-style: normal;font-weight: 400;line-height: 180%; max-width: 720px; margin: 30px auto 0;">
           В вашем электронном ящике вас ждёт новое сообщение! Мы улучшаем вашу рассылку — проверяйте письма, чтобы оставаться в курсе последних обновлений.
         </p>
-        <a href="#" style="display: flex; align-items: center; justify-content: center; text-decoration: none; color: #FFF; text-align: center; font-size: 16px; font-style: normal; font-weight: 700; line-height: 180%; width: 368px; height: 54px; flex-shrink: 0; border-radius: 12px; background: #F79900; margin: 30px auto 0; ">Присоединиться к подпискам</a>
+        <a href="#" style="display: flex; align-items: center; justify-content: center; text-decoration: none; color: #FFF; text-align: center; font-size: 16px; font-style: normal; font-weight: 700; line-height: 180%; max-width: 368px; width: 100%; height: 54px; flex-shrink: 0; border-radius: 12px; background: #F79900; margin: 30px auto 0; ">Присоединиться к подпискам</a>
       </td>
     </tr>
   </table>
@@ -62,7 +74,7 @@
 				<p style="color: #333;text-align: center;font-size: 16px;font-style: normal;font-weight: 400;line-height: 180%; max-width: 720px; margin: 20px auto 0;">
           В вашем электронном ящике вас ждет новое сообщение! Не упустите важную информацию — проверьте письма, чтобы оставаться в курсе последних обновлений, предложений или изменений. Если это связан.....
         </p>
-        <a href="#" style="display: flex; align-items: center; justify-content: center; text-decoration: none; color: #FFF; text-align: center; font-size: 16px; font-style: normal; font-weight: 700; line-height: 180%; width: 368px; height: 54px; flex-shrink: 0; border-radius: 12px; background: #F79900; margin: 30px auto 0; ">Присоединиться к подпискам</a>
+        <a href="#" style="display: flex; align-items: center; justify-content: center; text-decoration: none; color: #FFF; text-align: center; font-size: 16px; font-style: normal; font-weight: 700; line-height: 180%; max-width: 368px; width: 100%; height: 54px; flex-shrink: 0; border-radius: 12px; background: #F79900; margin: 30px auto 0; ">Присоединиться к подпискам</a>
 			</td>
     </tr>
   </table>
@@ -98,15 +110,15 @@
       <td style="text-align: center;">
 				<h2 style="color: #333; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal; text-align: left;">В вашем ящике новое сообщение!</h2>
         <table width="100%" cellpadding="0" cellspacing="0">
-          <tr>
-            <td align="center" style="padding-right: 15px;">
-							<video controls width="100%" style="display: block;border-radius: 12px; margin-top: 30px;">
+          <tr style="display: flex; flex-wrap: wrap; gap: 16px 30px; margin-top: 30px;">
+            <td align="center" style="flex: 1 1 0;">
+							<video controls width="100%" style="display: block;border-radius: 12px;  min-width: 200px; width: 100%;">
 								<source src="video.mp4" type="video/mp4">
 								Ваш браузер не поддерживает видео.
 							</video>
 						</td>
-            <td align="center" style="padding-left: 15px;">
-							<video controls width="100%" style="display: block;border-radius: 12px; margin-top: 30px;">
+            <td align="center" style="flex: 1 1 0;">
+							<video controls width="100%" style="display: block;border-radius: 12px;  min-width: 200px; width: 100%;">
 								<source src="video.mp4" type="video/mp4">
 								Ваш браузер не поддерживает видео.
 							</video>
@@ -124,7 +136,7 @@
   <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" style="max-width: 880px; margin: 125px auto 0; padding: 0px 20px 80px;">
     <tr>
       <td style="text-align: center;">
-        <img src="assets/img/image-07.png" alt="Новое сообщение" width="370" height="258" style="display: block; margin: -125px auto 0;">
+        <img src="assets/img/image-07.png" alt="Новое сообщение" style="display: block; margin: -125px auto 0; max-width: 370px; height: auto; width: 100%;">
         <h2 style="color: #333; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal; margin-top: 30px;">В вашем ящике новое сообщение!</h2>
         <p style="color: #333;text-align: center;font-size: 16px;font-style: normal;font-weight: 400;line-height: 180%; max-width: 720px; margin: 30px auto 0;">
           В вашем электронном ящике вас ждет новое сообщение! Не упустите важную информацию — проверьте письма, чтобы оставаться в курсе последних обновлений, предложений или изменений. Если это связано с вашим проектом, сообщением от партнера или просто интересными новостями, следует ознакомиться с содержимым как можно скорее, чтобы ничего не потерять!
@@ -134,8 +146,8 @@
   </table>
 
 	<!-- Social Block -->
-  <table width="100%" cellpadding="0" cellspacing="0" style="max-width: 880px; margin: 0 auto;">
-		<tr style="display: flex; justify-content: center; align-items: center; gap: 42px;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="max-width: 880px; margin: 0 auto; box-shadow: none;">
+		<tr style="display: flex; justify-content: center; align-items: center; gap: 21px 42px; flex-wrap: wrap;">
 			<td><a href="#"><img style="display: block;" src="assets/img/social-image-01.png" alt="Telegram" height="36"></a></td>
 			<td><a href="#"><img style="display: block;" src="assets/img/social-image-02.png" alt="YouTube" height="36"></a></td>
 			<td><a href="#"><img style="display: block;" src="assets/img/social-image-03.png" alt="VK" height="36"></a></td>
@@ -148,7 +160,7 @@
 		<tr>
 			<td>
 				<table width="100%" cellpadding="0" cellspacing="0" style="max-width: 720px; margin: 0 auto 40px; width: 100%;">
-					<tr>
+					<tr style="display: flex; flex-wrap: wrap;">
 						<td>
 							<img src="assets/img/image-05.png" alt="Георгий Героев" width="170" height="170">
 						</td>
@@ -156,7 +168,7 @@
 							<p style="color: #000;font-size: 32px;font-style: normal;font-weight: 700;line-height: 120%;">Георгий Героев</p>
 							<p style="color: #7D7D7D;font-size: 16px;font-style: normal;font-weight: 400;line-height: 180%;margin-top: 4px;">Сооснователь Off Group</p>
 							<table>
-								<tr>
+								<tr style="display: flex; flex-wrap: wrap;">
 									<td><p style="color: #333;font-size: 14px;font-style: normal;font-weight: 400;line-height: 180%;">Наш сайт: <a href="#" style="color: #333;font-size: 14px;font-style: normal;font-weight: 400;line-height: 180%;text-decoration-line: underline;"><strong>https://podpislon.ru</strong></a></p></td>
 									<td><p style="color: #333;font-size: 14px;font-style: normal;font-weight: 400;line-height: 180%;">Наш email: <a href="#" style="color: #333;font-size: 14px;font-style: normal;font-weight: 400;line-height: 180%;text-decoration-line: underline;"><strong>hello@off-group.com</strong></p></a></td>
 								</tr>
